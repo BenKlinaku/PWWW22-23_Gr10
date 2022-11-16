@@ -1,0 +1,49 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+#first
+{
+    background-image: url("assets/Backround.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#first h1
+{
+    width: 213px;
+    height: 148px;
+    background-color: #ce242d;
+    font-size: 36px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: 'Open sans', sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+#first table
+{
+    margin-top: 150px;
+    width: 1800px;
+    height: 158px;
+    background-color: #1d1d1d;
+}
+
+#first label
+{
+    font-size: 16px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #e7e7e7;
+    font-weight: 500;
+    font-family: 'Open sans', sans-serif;
+}
