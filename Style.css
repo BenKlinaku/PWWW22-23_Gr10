@@ -8,6 +8,8 @@ body
     margin: 0;
     padding: 0;
 }
+
+/* Backround picture in the first section of the site, and making it centered*/
 #first
 {
     background-image: url("assets/Backround.jpg");
@@ -15,11 +17,16 @@ body
     background-position: center;
 }
 
+/* Top left corner, red holiday resort*/
 #first h1
 {
+    /* Backround */
+    margin: 0;
     width: 213px;
     height: 148px;
     background-color: #ce242d;
+    /* Text */
+    padding-top: 41px;
     font-size: 36px;
     line-height: 30px;
     text-transform: uppercase;
@@ -27,17 +34,46 @@ body
     font-weight: 700;
     font-family: 'Open sans', sans-serif;
     text-align: center;
-    align-items: center;
 }
 
+/* Customizing the buttons on the top of the screen */
+#first div
+{
+    position: absolute;
+    left: 500px;
+    top: 50px;
+    word-spacing: 10px;
+}
+
+#first div a
+{
+    font-size: 22px;
+    line-height: 42px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Advent Pro";
+}
+
+#first div a:link, #first div a:visited
+{
+    color: black;
+    text-decoration: none;
+}
+
+#first div a:hover
+{
+    color: #ba0000;
+}
+/* Customizing the first table*/
 #first table
 {
-    margin-top: 150px;
+    margin-top: 250px;
     width: 1800px;
     height: 158px;
     background-color: #1d1d1d;
 }
 
+/* Customizing the labels inside the table*/
 #first label
 {
     font-size: 16px;
