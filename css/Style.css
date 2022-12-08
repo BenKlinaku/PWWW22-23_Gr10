@@ -12,7 +12,7 @@ body
 /* Backround picture in the first section of the site, and making it centered*/
 #first
 {
-    background-image: url("assets/Backround.jpg");
+    background-image: url(../assets/Main/Backround.jpg);
     background-size: cover;
     background-position: center;
 }
