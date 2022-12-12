@@ -40,14 +40,14 @@ body
 #first div
 {
     position: absolute;
-    left: 400px;
-    top: 50px;
+    left: 433px;
+    top: 45px;
     
 }
 
 #first div a
 {
-    margin-left: 10px;
+    margin-left: 16px;
     font-size: 22px;
     line-height: 42px;
     text-transform: uppercase;
@@ -81,6 +81,7 @@ body
 #first #nextholiday
 {
     margin-top: 0;
+    margin-bottom: 60px;
     font-size: 105px;
     line-height: 70px;
     text-transform: uppercase;
@@ -89,6 +90,29 @@ body
     font-family:'Advent Pro',serif;
     text-align: center;
 }
+
+/* Button in the middle */
+#first > a
+{
+    display: block;
+    margin: auto;
+    padding-top: 21px;
+    width: 169px;
+    height: 60px;
+    background-color: #ce242d;
+    font-size: 18px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Khand";
+    text-align: center;
+}
+
+#first > a:link, #first > a:visited
+{
+    text-decoration: none;
+}
 /* Customizing the input table*/
 #first table
 {
@@ -96,7 +120,14 @@ body
     width: 100%;
     height: 158px;
     background-color: #1d1d1d;
+    text-align: center;
 }
+/*
+#first table tr
+{
+    position: absolute;
+    left: 50px;
+} */
 
 /* Customizing the labels inside the table*/
 #first label
@@ -135,26 +166,27 @@ body
     height: 67px;
     background-color: #ce242d;
     align-items: center;
-    /* Smaller text*/
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #ffd3d3;
-    font-weight: 400;
-    font-family: "Khand",serif;
-    text-align: center;
 }
 
 #first table button p
 {
-    /* Bigger text*/
-    margin-bottom: 0;
-    font-size: 19px;
-    letter-spacing: 0;
-    color: #ffffff;
-    font-weight: 500;
-    font-family: "Khand",serif;
+     /* Bigger text*/
+     font-size: 19px;
+     line-height: 21px;
+     text-transform: uppercase;
+     color: #ffffff;
+     font-weight: 500;
+     font-family: "Khand";
+     text-align: center;
+}
+
+#first table button p span
+{
+    /* Smaller text*/
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffd3d3;
+    font-weight: 400;
 }
 
 /* Second section of the page */
@@ -166,18 +198,11 @@ body
 }
 
 /* Welcome text */
-
-#welcome
-{
-    font-size: 22px;
-    line-height: 19px;
-    color: #ba0000;
-    font-weight: 500;
-    font-family: "Khand",serif;
-}
-
 #second > p
 {
+    margin: auto;
+    margin-top: 122px;
+    margin-bottom: 120px;
     width: 1068px;
     height: 174px;
     font-size: 38px;
@@ -188,10 +213,66 @@ body
     font-family: "Advent Pro",serif;
 }
 
+#second > p span
+{
+    font-size: 22px;
+    line-height: 19px;
+    color: #ba0000;
+    font-weight: 500;
+    font-family: "Khand",serif;
+}
+
 /* Buttons with icons */
 
-/* #second img
+#second table
+{
+    margin: auto;
+    border-bottom: 7px solid #b41d25;
+}
+
+#second table a
+{
+    display: block;
+    width: 295px;
+    height: 318px;
+}
+
+#second table a p
+{
+    font-size: 28px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #181818;
+    font-weight: 700;
+    font-family: "Advent Pro";
+}
+
+#second table a p span
+{
+    font-size: 20px;
+    line-height: 20px;
+    color: #d81924;
+    font-weight: 500;
+    font-family: "Khand";
+}
+
+#second table a:link, #second table a:visited
+{
+    text-decoration: none;
+}
+
+#second img
 {
     width: 59px;
     height: 59px;
-} */
+}
+
+
+
+
+
+#GuestReviews img
+{
+    height: 50px;
+    width: 50px;
+}
