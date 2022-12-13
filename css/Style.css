@@ -14,7 +14,6 @@ body
 {
     background-image: url(../assets/Main/Backround.jpg);
     background-size: cover;
-    background-position: center;
 }
 
 /* Top left corner, red holiday resort*/
@@ -26,7 +25,7 @@ body
     height: 148px;
     background-color: #ce242d;
     /* Text */
-    padding-top: 41px;
+    padding-top: 35px;
     font-size: 36px;
     line-height: 30px;
     text-transform: uppercase;
@@ -41,7 +40,7 @@ body
 {
     position: absolute;
     left: 433px;
-    top: 45px;
+    top: 20px;
     
 }
 
@@ -69,6 +68,7 @@ body
 /* Text in the middle*/
 #first p
 {
+    margin-bottom: 23px;
     font-size: 64px;
     line-height: 52px;
     text-transform: uppercase;
@@ -81,7 +81,7 @@ body
 #first #nextholiday
 {
     margin-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     font-size: 105px;
     line-height: 70px;
     text-transform: uppercase;
@@ -114,20 +114,25 @@ body
     text-decoration: none;
 }
 /* Customizing the input table*/
-#first table
+#first form
 {
-
+    margin-top: 100px;
     width: 100%;
     height: 158px;
     background-color: #1d1d1d;
-    text-align: center;
+    padding-top: 25px;
 }
-/*
-#first table tr
+
+#first table
 {
-    position: absolute;
-    left: 50px;
-} */
+    margin: auto;
+
+}
+
+#first table td
+{
+    padding: 0 5px;
+}
 
 /* Customizing the labels inside the table*/
 #first label
@@ -165,19 +170,18 @@ body
     width: 206px;
     height: 67px;
     background-color: #ce242d;
-    align-items: center;
 }
 
 #first table button p
 {
-     /* Bigger text*/
-     font-size: 19px;
-     line-height: 21px;
-     text-transform: uppercase;
-     color: #ffffff;
-     font-weight: 500;
-     font-family: "Khand";
-     text-align: center;
+    /* Bigger text*/
+    font-size: 19px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Khand";
+    text-align: center;
 }
 
 #first table button p span
@@ -195,6 +199,7 @@ body
 #second
 {
     background-color: #ffffff;
+    margin-bottom: 149px;
 }
 
 /* Welcome text */
@@ -230,15 +235,20 @@ body
     border-bottom: 7px solid #b41d25;
 }
 
+/* Individual buttons */
 #second table a
 {
     display: block;
     width: 295px;
     height: 318px;
+    padding-top: 50px;
+    padding-left: 50px;
 }
 
+/* text in buttons */
 #second table a p
 {
+    
     font-size: 28px;
     line-height: 28px;
     text-transform: uppercase;
@@ -254,6 +264,8 @@ body
     color: #d81924;
     font-weight: 500;
     font-family: "Khand";
+    position: relative;
+    top: 25px;
 }
 
 #second table a:link, #second table a:visited
@@ -261,19 +273,45 @@ body
     text-decoration: none;
 }
 
+#second table a:hover
+{
+    background-color: #f5e9e4;
+}
+
+/* icons */
 #second img
 {
     width: 59px;
     height: 59px;
 }
 
+/* Third section / Guest reviews */
 
-
-
-
-
-#GuestReviews img
+#GuestReviews
 {
-    height: 50px;
-    width: 50px;
+    display: flex;
+
+}
+
+#GuestReviews div
+{
+    width: 607px;
+    height: 569px;
+    background-color: #ffffff;
+}
+
+/* Smaller photo on the right */
+#view
+{
+    width: 293px;
+    height: 569px;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
+/* Bigger photo on the left */
+#bigBoat
+{
+    width: 900px;
+    height: 569px;
 }
