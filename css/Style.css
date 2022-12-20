@@ -199,7 +199,7 @@ body
 #second
 {
     background-color: #ffffff;
-    margin-bottom: 149px;
+    margin-bottom: 163px;
 }
 
 /* Welcome text */
@@ -295,23 +295,72 @@ body
 
 #GuestReviews div
 {
-    width: 607px;
+    width: 34%;
     height: 569px;
     background-color: #ffffff;
+    /* text in the middle of photos */
+    font-size: 23px;
+    line-height: 19px;
+    color: #000000;
+    font-weight: 500;
+    font-family: "Khand";
+}
+
+#GuestReviews div p
+{
+    width: 412px;
+    height: 246px;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #222222;
+    font-weight: 600;
+    font-family: "Advent Pro";
+}
+
+#GuestReviews div span
+{
+
+    font-size: 18px;
+    color: #212121;
+    font-weight: 400;
+    font-family: "Khand";
 }
 
 /* Smaller photo on the right */
 #view
 {
-    width: 293px;
+    width: 16%;
     height: 569px;
     object-fit: cover;
-    object-position: 100% 0;
+    object-position: 65% 0;
 }
 
 /* Bigger photo on the left */
 #bigBoat
 {
-    width: 900px;
+    width: 50%;
     height: 569px;
+}
+
+/* News section */
+
+/* top of the section with numbers */
+#numbersList {
+    display: flex;
+}
+/* Latest news section */
+#latestNews {
+    display: flex;
+}
+/* images in news anchors */
+#latestNews a img {
+    width: 332px;
+    height: 213px;
+}
+
+/* Small calendar */
+#latestNews .calendar {
+    width: 13px;
+    height: 14px;
 }
