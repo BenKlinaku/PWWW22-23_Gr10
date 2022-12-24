@@ -343,24 +343,122 @@ body
     height: 569px;
 }
 
-/* News section */
 
+/* Rooms section */
+#Rooms {
+    height: 705px;
+    background-color: #000000;
+}
+#Rooms p {
+    width: 401px;
+    height: 108px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #b4b4b4;
+    font-weight: 400;
+    font-family: "Khand";
+}
+
+
+/* News section */
+#News {
+    background-color: white;
+}
 /* top of the section with numbers */
-#numbersList {
-    display: flex;
+#numbersList table {
+    margin: auto;
+    margin-top: 105px;
+    margin-bottom: 105px;
+}
+.bigNumb {
+    /* border needs to be bigger  ?*/
+    border-left:  1px solid black;
+    padding-left: 56px;
+    /* numbers */
+    font-size: 65px;
+    line-height: 30px;
+    color: #363636;
+    font-weight: 700;
+    font-family: "Advent Pro";
+}
+/* line above first two numbers */
+.bigNumb span {
+    border-top: 4px solid #ce242d; ;
+}
+.smallText {
+    padding-right: 56px;
+    padding-left: 15px;
+    /* words */
+    font-size: 20px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #ce242d;
+    font-weight: 500;
+    font-family: "Khand";
+
 }
 /* Latest news section */
+/* Big words in the beginning */
+#News > p {
+    text-align: center;
+    margin-bottom: 52px;
+    font-size: 45px;
+    line-height: 31px;
+    text-transform: uppercase;
+    color: #2a2a2a;
+    font-weight: 700;
+    font-family: "Advent Pro";
+}
+/* anchors */
 #latestNews {
-    display: flex;
+    display: flex; 
+    margin-bottom: 77px;
+}
+#latestNews a {
+    margin-left: 1%;
+    text-align: center;
+    padding-top: 58px;
+    width: 380px;
+    height: 455px;
+    background-color: #f5e9e4;
+    text-decoration: none;
 }
 /* images in news anchors */
 #latestNews a img {
-    width: 332px;
-    height: 213px;
+    object-fit: cover;
+    width: 201px;
+    height: 201px;
+    border-radius: 100px;
 }
-
 /* Small calendar */
 #latestNews .calendar {
     width: 13px;
     height: 14px;
+}
+/* Text below the images */
+.bigTextNewsAnchor {
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 26px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #ba0000;
+    font-weight: 600;
+    font-family: "Advent Pro";
+}
+/* Lowest text in the anchors */
+.smallTextNewsAnchor {
+    font-size: 16px;
+    line-height: 23px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Khand";
+}
+.smallTextNewsAnchor span {
+    font-size: 17px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #ba0000;
+    font-weight: 500;
+    font-family: "Khand";
 }
