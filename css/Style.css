@@ -345,11 +345,28 @@ body
 
 
 /* Rooms section */
+/* Backround */
 #Rooms {
     height: 705px;
     background-color: #000000;
+    display: flex;
 }
-#Rooms p {
+/* Removing decorations for all anchors in this section */
+#Rooms a:link, #Rooms a:visited
+{
+    text-decoration: none;
+}
+
+/* text in the left */
+#leftSideRooms h2 {
+    font-size: 45px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Advent Pro";
+}
+#leftSideRooms p {
     width: 401px;
     height: 108px;
     font-size: 20px;
@@ -358,9 +375,108 @@ body
     font-weight: 400;
     font-family: "Khand";
 }
-
+/* button */
+#leftSideRooms a {
+    display: block;
+    padding-top: 21px;
+    width: 169px;
+    height: 60px;
+    background-color: #ce242d;
+    font-size: 18px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Khand";
+    text-align: center;
+}
+/* Right side arrow "buttons" */
+#Rooms > img {
+    width: 45px;
+    height: 45px;
+}
+/* Right side anchor */
+#rightSideRooms {
+    width: 339px;
+    height: 596px;
+    display: block;
+    border: 1px solid #313131;
+    text-align: center;
+}
+/* red circle at the top */
+#perNight {
+    position: relative;
+    top: 61px;
+    left: 57px;
+    padding-top: 28px;
+    width: 88px;
+    height: 88px;
+    border-radius: 44px;
+    background-color: #ce242d;
+    text-align: center;
+    font-size: 28px;
+    line-height: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Khand";
+}
+#perNight span {
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Khand";
+}
+/* Hotel picture in anchor */
+#rightSideRooms img {
+    width: 217px;
+    height: 217px;
+    border-radius: 109px;
+    object-fit: cover;
+}
+/* Text below picture */
+#rightSideRooms p {
+    font-size: 26px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Advent Pro";
+}
+/* Stars */
+#rightSideRooms #stars {
+    position: relative;
+    top: -15px;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    color: #fbe03d;
+}
+/* Text below the stars */
+#rightSideRooms #roomDescription {
+    position: relative;
+    top: -20px;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: none;
+    color: #b4b4b4;
+    font-weight: 400;
+    font-family: "Khand";
+    margin-bottom: 0;
+}
+/* Lowest text */
+#rightSideRooms #viewDetails {
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #d81924;
+    font-weight: 500;
+    font-family: "Khand";    
+}
 
 /* News section */
+/* Backround */
 #News {
     background-color: white;
 }
