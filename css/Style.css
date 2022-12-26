@@ -192,7 +192,6 @@ body
     color: #ffd3d3;
     font-weight: 400;
 }
-
 /* Second section of the page */
 /* Backround */
 
@@ -343,13 +342,71 @@ body
     height: 569px;
 }
 
+/* Video section */
+/* Backround */
+#Video {
+    background-color: white;
+    height: 491px;
+}
+
+/* Red button image */
+#Video img {
+    width: 110px;
+    height: 110px;
+    float: left;
+}
+/* Video */
+#Video video {
+    display: none;
+}
+/* Text in this section */
+#textVideo {
+    float: left;
+}
+#Video span {
+    font-size: 23px;
+    line-height: 19px;
+    color: #ce242d;
+    font-weight: 500;
+    font-family: "Khand";    
+}
+#Video h2 {
+    font-size: 45px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #212121;
+    font-weight: 600;
+    font-family: "Advent Pro";    
+}
+#Video p {
+    width: 470px;
+    height: 98px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #212121;
+    font-weight: 400;
+    font-family: "Khand";    
+}
+/* Button */
+#vidButton {
+    width: 149px;
+    height: 60px;
+    background-color: #ce242d;    
+    font-size: 19px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Khand";    
+}
+
 
 /* Rooms section */
 /* Backround */
 #Rooms {
     height: 705px;
     background-color: #000000;
-    display: flex;
+  
 }
 /* Removing decorations for all anchors in this section */
 #Rooms a:link, #Rooms a:visited
@@ -357,6 +414,11 @@ body
     text-decoration: none;
 }
 
+/* Left side */
+#leftSideRooms {
+    float:left;
+    margin-left: 200px;
+}
 /* text in the left */
 #leftSideRooms h2 {
     font-size: 45px;
@@ -390,13 +452,17 @@ body
     font-family: "Khand";
     text-align: center;
 }
+
+/* Right side */
 /* Right side arrow "buttons" */
-#Rooms > img {
+#rightSideRooms > img {
+    float: left;
     width: 45px;
     height: 45px;
 }
 /* Right side anchor */
-#rightSideRooms {
+#rightSideRooms a {
+    float: left;
     width: 339px;
     height: 596px;
     display: block;
@@ -428,14 +494,14 @@ body
     font-family: "Khand";
 }
 /* Hotel picture in anchor */
-#rightSideRooms img {
+#rightSideRooms a img {
     width: 217px;
     height: 217px;
     border-radius: 109px;
     object-fit: cover;
 }
 /* Text below picture */
-#rightSideRooms p {
+#rightSideRooms a p {
     font-size: 26px;
     line-height: 40px;
     text-transform: uppercase;
@@ -444,7 +510,7 @@ body
     font-family: "Advent Pro";
 }
 /* Stars */
-#rightSideRooms #stars {
+#rightSideRooms a #stars {
     position: relative;
     top: -15px;
     font-size: 16px;
@@ -453,7 +519,7 @@ body
     color: #fbe03d;
 }
 /* Text below the stars */
-#rightSideRooms #roomDescription {
+#rightSideRooms a #roomDescription {
     position: relative;
     top: -20px;
     font-size: 18px;
@@ -465,7 +531,7 @@ body
     margin-bottom: 0;
 }
 /* Lowest text */
-#rightSideRooms #viewDetails {
+#rightSideRooms a #viewDetails {
     margin-top: 0;
     font-size: 20px;
     line-height: 19px;

@@ -115,15 +115,22 @@
     <img id="view" src="assets/Main/Water view.jpg" alt="view from a cliffside">
 </section>
 <section id="Video">
-    Featured Video <br>
-    <b>Exploring Holiday Resort</b>
-    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga maior
-        es omnis nihil aliquam, impedit, ipsam optio recusand
-        ae delectus iure quibusdam facilis minus sed at quia et aspernatur deleniti officiis quaerat.
-    </p>
-    <button type="button">
-        View Video
-    </button>
+    <img src="assets/Main/RedButton.png">
+    <div id="textVideo">
+        <span> Featured Video </span> <br>
+        <h2> Exploring Holiday Resort </h2>
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga maior
+            es omnis nihil aliquam, impedit, ipsam optio recusand
+            ae delectus iure quibusdam facilis minus sed at quia et aspernatur deleniti officiis quaerat.
+        </p>
+        <button id="vidButton" type="button">
+            View video
+        </button>
+    </div>
+    <video id="vid" width="500" controls>
+        <source src="assets/Main/Video/Holiday Resort Lombok Absolutely Leisure.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    <!-- VIDEO TAKEN FROM: https://www.youtube.com/watch?v=rSbekEZqVYA&t=26s&ab_channel=HolidayResortLombokOfficial-->
 </section>
 <section id="Rooms">
     <div id="leftSideRooms">
@@ -134,8 +141,9 @@
         </p>
         <a href="#">View all room</a>
     </div>
-    <img src="assets/Main/Arrow.png">
-        <a id="rightSideRooms" href="#">
+    <div id="rightSideRooms">
+        <img src="assets/Main/Arrow.png">
+        <a href="#">
             <div id="perNight"> $150 <br> <span> per night </span></div>
             <img src="assets/Main/Bedrooms/Room1.jpg">
             <p> Suite rooms</p>
@@ -146,7 +154,8 @@
             are equipped with a bidet).</p>
             <p id="viewDetails"> View details & photos </p>
         </a>
-    <img src="assets/Main/ArrowFlipped.png">
+        <img src="assets/Main/ArrowFlipped.png">
+    </div>
 </section>
 <section id="News">
    <div id="numbersList">
@@ -190,4 +199,6 @@
 <footer>
 </footer>
 </body>
+<!-- JavaScript-->
+<script src="js/VideoButton.js"></script>
 </html>
