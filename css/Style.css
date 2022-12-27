@@ -472,6 +472,9 @@ body
     width: 45px;
     height: 45px;
 }
+#rightSideRooms > img:hover {
+    cursor: pointer;
+}
 /* Right side anchor */
 #rightSideRooms a {
     float: left;
