@@ -38,9 +38,9 @@ body
 /* Customizing the buttons on the top of the screen */
 #first div
 {
-    position: absolute;
-    left: 433px;
-    top: 20px;
+    position: relative;
+    top: -125px;
+    text-align: center;
     
 }
 
@@ -242,6 +242,7 @@ body
     height: 318px;
     padding-top: 50px;
     padding-left: 50px;
+    user-select: none;
 }
 
 /* text in buttons */
@@ -289,11 +290,12 @@ body
 #GuestReviews
 {
     display: flex;
-
 }
 
 #GuestReviews div
 {
+    margin-top: 78px;
+    margin-left: 50px;
     width: 34%;
     height: 569px;
     background-color: #ffffff;
@@ -319,11 +321,43 @@ body
 
 #GuestReviews div span
 {
-
+    position: relative;
+    top: 44px;
     font-size: 18px;
     color: #212121;
     font-weight: 400;
     font-family: "Khand";
+    user-select: none;
+}
+
+#GuestReviews #starGuest {
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: #ff9422;
+}
+#GuestReviews #starGuest:hover {
+    cursor: default;
+}
+
+#smallCircles {
+    position: relative;
+    left: 271px;
+    user-select: none;
+}
+#smallCircles:hover {
+    cursor: default;
+}
+
+#smallCircles img {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#smallCircles img:hover {
+    cursor: pointer;
 }
 
 /* Smaller photo on the right */
@@ -333,6 +367,7 @@ body
     height: 569px;
     object-fit: cover;
     object-position: 65% 0;
+    z-index: 1;
 }
 
 /* Bigger photo on the left */
@@ -346,7 +381,7 @@ body
 /* Backround */
 #Video {
     background-color: white;
-    height: 501px;
+    height: 412px;
 }
 
 /* Red button image */
@@ -355,7 +390,7 @@ body
     height: 110px;
     float: left;
     margin-left: 32%;
-    margin-top: 129px;
+    margin-top: 58px;
 }
 #Video img:hover {
     cursor: pointer;
@@ -364,12 +399,12 @@ body
 #Video video {
     display: none;
     margin: auto;
-    padding-top: 129px;
+    padding-top: 58px;
 }
 /* Text in this section */
 #textVideo {
     float: left;
-    margin-top: 129px;
+    margin-top: 58px;
     margin-left: 2%;
 }
 #Video span {
@@ -383,12 +418,12 @@ body
 #Video h2 {
     margin-top: 10px;
     margin-bottom: 0;
-    font-size: 45px;
+    font-size: 43px;
     line-height: 40px;
     text-transform: uppercase;
     color: #212121;
     font-weight: 600;
-    font-family: "Advent Pro";    
+    font-family: "Advent Pro";   
 }
 #Video p {
     width: 470px;
@@ -672,17 +707,18 @@ body
 }
 /* Text in it */
 #Subscribe p {
-    
+    margin-top: 34px;
+    margin-left: 20%;
     font-size: 45px;
     line-height: 78px;
     text-transform: uppercase;
     color: #ca242b;
     font-weight: 700;
     font-family: "Advent Pro";    
-    margin-left: 50px;
 }
 #Subscribe span {
-    
+    position: relative;
+    top: -55px;
     width: 273px;
     height: 34px;
     font-size: 18px;
@@ -695,6 +731,8 @@ body
 /* Right side box */
 /* Email box */
 #Subscribe input[type=email] {
+    margin-left: 183px;
+    margin-top: 51px;
     width: 393px;
     height: 60px;
     background-color: #ffffff;
@@ -707,12 +745,17 @@ body
 }
 /* Button */
 #Subscribe button {
+    position: relative;
+    top: -5px;
     width: 209px;
     height: 60px;
     background-color: #ce242d;
     
 }
 #Subscribe button p {
+    position: relative;
+    left: -10px;
+    top: -14px;
     float: left;
     font-size: 19px;
     line-height: 19px;
@@ -722,14 +765,88 @@ body
     font-family: "Khand";    
 }
 #Subscribe button img {
+    position: relative;
+    top: 14px;
     width: 26px;
     height: 26px;
 }
 /* Footer/Last section */
 /* Backround */
 footer {
-    /*position: relative;
-    top: -20px; */
     height: 507px;
     background-color: #000000;    
+}
+/* Links and contact information at the top */
+/* Removing underline in links and making universal list item changes */
+footer a:link, footer a:visited {
+    text-decoration: none;
+}
+footer div a:link, footer div a:visited {
+    color: #999999;
+}
+footer li {
+    margin-top: 10px;
+    list-style-image:url('../assets/Main/SmallArrow.png');
+    font-size: 17px;
+    line-height: 14px;
+    font-weight: 400;
+    font-family: "Khand";
+}
+/* Leftmost and middle link sections */
+.quickLinks {
+    float: left;
+}
+.quickLinks p {
+    font-size: 26px;
+    line-height: 78px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Advent Pro"; 
+}
+.quickLinks ul {
+    float: left;
+}
+/* Rightmost section */
+#contactInfoDiv div {
+    font-size: 26px;
+    line-height: 78px;
+    text-transform: uppercase;
+    color: #ce242d;
+    font-weight: 700;
+    font-family: "Advent Pro";
+}
+#contactInfoDiv p {
+    font-size: 19px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Khand";
+}
+#contactInfoDiv span {
+    margin-left: 50px;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: none;
+    font-weight: 400;  
+}
+/* Bottom part */
+#bottomInfo {
+    display: flex;
+    margin-top: 50px;
+}
+#bottomInfo p {
+
+    font-size: 17px;
+    line-height: 31px;
+    color: #999999;
+    font-weight: 400;
+    font-family: "Khand";
+}
+/* Social media icons */
+footer img {
+    width: 13px;
+    height: 13px;
+    user-select: none;
 }
