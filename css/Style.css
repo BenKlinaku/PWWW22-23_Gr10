@@ -7,6 +7,7 @@ body
 {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 /* First section of the page*/
 /* Backround picture in the first section of the site, and making it centered*/
@@ -39,7 +40,7 @@ body
 #first div
 {
     position: relative;
-    top: -125px;
+    top: -147px;
     text-align: center;
     
 }
@@ -52,6 +53,7 @@ body
     text-transform: uppercase;
     font-weight: 600;
     font-family: 'Advent Pro',serif;
+    transition: all 0.2s;
 }
 
 #first div a:link, #first div a:visited
@@ -243,6 +245,7 @@ body
     padding-top: 50px;
     padding-left: 50px;
     user-select: none;
+    transition: all 0.2s;
 }
 
 /* text in buttons */
@@ -275,6 +278,7 @@ body
 
 #second table a:hover
 {
+    scale: 1.1;
     background-color: #f5e9e4;
 }
 
@@ -290,6 +294,7 @@ body
 #GuestReviews
 {
     display: flex;
+    height: 569px;
 }
 
 #GuestReviews div
@@ -381,7 +386,7 @@ body
 /* Backround */
 #Video {
     background-color: white;
-    height: 412px;
+    height: 525px;
 }
 
 /* Red button image */
@@ -390,7 +395,7 @@ body
     height: 110px;
     float: left;
     margin-left: 32%;
-    margin-top: 58px;
+    margin-top: 112px;
 }
 #Video img:hover {
     cursor: pointer;
@@ -399,12 +404,12 @@ body
 #Video video {
     display: none;
     margin: auto;
-    padding-top: 58px;
+    padding-top: 112px;
 }
 /* Text in this section */
 #textVideo {
     float: left;
-    margin-top: 58px;
+    margin-top: 112px;
     margin-left: 2%;
 }
 #Video span {
@@ -464,10 +469,12 @@ body
 /* Left side */
 #leftSideRooms {
     float:left;
-    margin-left: 200px;
+    margin-left: 25%;
+    margin-top: 204px;
 }
 /* text in the left */
 #leftSideRooms h2 {
+    margin-bottom: 0;
     font-size: 45px;
     line-height: 40px;
     text-transform: uppercase;
@@ -483,6 +490,7 @@ body
     color: #b4b4b4;
     font-weight: 400;
     font-family: "Khand";
+    margin-bottom: 50px;
 }
 /* button */
 #leftSideRooms a {
@@ -502,10 +510,16 @@ body
 
 /* Right side */
 /* Right side arrow "buttons" */
+#rightSideRooms {
+    padding-top: 80px;
+    position: relative;
+    left: 100px;
+}
 #rightSideRooms > img {
     float: left;
     width: 45px;
     height: 45px;
+    margin-top: 278px;
 }
 #rightSideRooms > img:hover {
     cursor: pointer;
@@ -803,12 +817,19 @@ footer li {
     color: #ffffff;
     font-weight: 700;
     font-family: "Advent Pro"; 
+    margin-bottom: 0;
 }
 .quickLinks ul {
+    position: relative;
+    left: -30px;
     float: left;
+    margin-top: 0;
 }
 /* Rightmost section */
 #contactInfoDiv div {
+    position: relative;
+    left: 11%;
+    top: 25px;
     font-size: 26px;
     line-height: 78px;
     text-transform: uppercase;
@@ -817,6 +838,9 @@ footer li {
     font-family: "Advent Pro";
 }
 #contactInfoDiv p {
+    position: relative;
+    left: 11%;
+    top: 8px;
     font-size: 19px;
     line-height: 18px;
     text-transform: uppercase;
@@ -835,6 +859,8 @@ footer li {
 #bottomInfo {
     display: flex;
     margin-top: 50px;
+    margin-left: 15%;
+
 }
 #bottomInfo p {
 
@@ -846,6 +872,8 @@ footer li {
 }
 /* Social media icons */
 footer img {
+    margin-left: 16px;
+    margin-top: 25px;
     width: 13px;
     height: 13px;
     user-select: none;

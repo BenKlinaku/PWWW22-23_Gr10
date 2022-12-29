@@ -5,14 +5,13 @@ var LeftArrow = document.querySelector("#leftArrowButton");
 // Counter
 var count = 1;
 
-// Other items that need to be changed during the interaction
-var perNight = document.querySelector("#perNight");
-var RoomImages = document.querySelector("#RoomImages");
-var stars = document.querySelector("#stars");
-var roomDescription = document.querySelector("#roomDescription");
 
 // Function that checks count and changes document based on it
 function checkCount(count){
+    var perNight = document.querySelector("#perNight");
+    var RoomImages = document.querySelector("#RoomImages");
+    var stars = document.querySelector("#stars");
+    var roomDescription = document.querySelector("#roomDescription");
     switch(count){
         case 1:
             perNight.innerHTML = "$150 <br> <span> per night </span>";
