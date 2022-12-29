@@ -1,0 +1,72 @@
+#topMenu {
+    margin-top: 100px;
+    text-align: center;
+    user-select: none;
+}
+canvas:hover {
+    cursor: pointer;
+}
+#topMenu b {
+    font-size: 20px;
+    line-height: 26px;
+    color: #212121;
+    font-weight: 400;
+    font-family: "Khand";
+}
+table, th, td {
+    border: 3px solid #ece3d6;
+}
+fieldset{
+    border: 3px dashed #ece3d6;
+    background-image: radial-gradient(circle at center,#ece3d6 0%, white 75%);
+    margin-bottom: 57px;
+}
+caption, legend {
+    font-size: 35px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #212121;
+    font-weight: 600;
+    font-family: "Advent Pro";
+}
+th {
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #212121;
+    font-weight: 600;
+    font-family: "Advent Pro";  
+    font-style: italic;
+}
+td {
+    font-size: 20px;
+    line-height: 40px;
+    color: #212121;
+    font-family: "Advent Pro";  
+    font-style: italic; 
+}
+li li {
+    font-size: 15px;
+    line-height: 40px;
+    color: #212121;
+    font-family: "Advent Pro";  
+    font-style: italic; 
+}
+ul {
+    list-style: decimal;
+}
+ul ul {
+    list-style: lower-alpha;
+}
+table img {
+    width: 88%;
+    height: 250px;
+    padding-left: 57px;
+}
+/* Hiding initial menus */
+#ITbl {
+    display: none;
+}
+#JTbl {
+    display: none;
+}

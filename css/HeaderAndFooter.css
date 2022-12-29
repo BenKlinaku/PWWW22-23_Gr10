@@ -14,7 +14,7 @@ header {
     text-align: center;
     background-color: white;
 }
-header div a
+header nav a
 {
     margin-left: 16px;
     font-size: 22px;
@@ -23,15 +23,16 @@ header div a
     font-weight: 600;
     font-family: 'Advent Pro',serif;
     transition: all 0.2s;
+    user-select: none;
 }
 
-header div a:link, header div a:visited
+header nav a:link, header nav a:visited
 {
     color: black;
     text-decoration: none;
 }
 
-header div a:hover
+header nav a:hover
 {
     color: #ba0000;
 }
