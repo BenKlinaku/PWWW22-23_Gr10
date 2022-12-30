@@ -22,7 +22,7 @@
             <a href="#">Gallery</a> 
             <a href="#GuestReviews">Reviews</a> 
             <a href="#">Blog</a> 
-            <a href="#">Contact</a>
+            <a href="#contactInfoDiv">Contact</a>
         </div>
     <p>
         Find amazing <br>
@@ -105,12 +105,12 @@
     <img id="bigBoat" src="assets/Main/Boat.jpg" alt="photo from a boat">
     <div>
         Guest Reviews
-        <p>
+        <p id="reviewG">
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
             placeat, quam, consequatur ipsa quo tenetur, ex aut 
             sint esse totam amet distinctio? Mollitia perspiciatis sequi nihil sint totam, blanditiis ea."
         </p>
-        <span>Lesley Greenman, Australia</span> <br>
+        <span id="locationG">Lesley Greenman, Australia</span> <br>
         <span id="starGuest"> &#9733 &#9733 &#9733 &#9733 &#9733 </span>
         <div id="smallCircles">
             <img id="1stCircle" src="assets/Main/Circle.jpg">
@@ -201,13 +201,26 @@
 
     <div id="Subscribe">
         <p> Subscribe us <br><span> Get latest news and updates in your inbox </span></p>
-        <form method="get" action="http://www.randyconnolly.com/tests/process.php">
-            <input type="email" name="Email" placeholder="your email address...">
-            <button type="submit">
+        <form>
+            <input id="emailSubscribe" type="email" name="Email" placeholder="your email address...">
+            <button id="subscribeEmailButton" type="button">
                 <p> Subscribe </p>
                 <img src="assets/Main/WhiteArrowFlipped.png">
             </button>
         </form>
+        <script>
+            var button = document.getElementById("subscribeEmailButton");
+            var email = document.getElementById("emailSubscribe");
+            button.addEventListener("click", function(){
+                if(email.value == ""){
+                    window.alert("Please write your email in the email field!");
+                }
+                else{
+                    email.value = "";
+                    window.alert("Thank you, you have successfully subscribed to our newsletter!");
+                }
+            });
+        </script>
     </div>
 </section>
 <footer>
@@ -259,4 +272,5 @@
 <!-- JavaScript-->
 <script src="js/VideoButton.js"></script>
 <script src="js/TextScroll.js"></script>
+<script src="js/ReviewScroll.js"></script>
 </html>

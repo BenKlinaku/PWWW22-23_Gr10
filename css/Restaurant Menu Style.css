@@ -1,5 +1,24 @@
-#topMenu {
+#dinnerPlate {
+
     margin-top: 100px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, white, #ece3d6);
+}
+svg {
+    background-color: orangered;
+    margin-left: 200px;
+    
+}
+#fork{
+    position: relative;
+    top: -50px;
+    left: -229px;
+    width: 200px;
+    height: 150px;
+}
+#topMenu {
+    background-image: linear-gradient(to bottom, #ece3d6 0% , white 80%);
+    padding-top: 50px;
     text-align: center;
     user-select: none;
 }
@@ -69,4 +88,16 @@ table img {
 }
 #JTbl {
     display: none;
+}
+
+#RestaurantMenuMain a {
+    position: relative;
+    top: -25px;
+    display: block;
+    text-align: center;
+    font-size: 23px;
+    line-height: 19px;
+    color: #ce242d;
+    font-weight: 500;
+    font-family: "Khand";
 }
