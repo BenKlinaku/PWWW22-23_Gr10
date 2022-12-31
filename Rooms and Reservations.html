@@ -28,8 +28,116 @@
         
     </section>
     <section id="Reserve">
-        <h1 id="d">fa</h1>
+        <b><u> Make your reservation! </u></b>
+        <form method="post" action="http://www.randyconnolly.com/tests/process.php" autocomplete="on">
+            <label> Name <span style="margin-left:160px">Surname</span> <span style="margin-left:135px">Age</span></label> <br>
+            <input type="text" name="name" placeholder="Your name.." required>
+            <input type="text" name="surname" placeholder="Your surname.." required>
+            <input type="number" name="age" placeholder="Age" min="18" max="100" required> <br>
+            <label> E-mail <span style="margin-left:151px">Telephone number</span></label> <br>
+            <input type="email" name="email" placeholder="Your email.." required>
+            <input type="tel" name="Telephone" placeholder="Your telephone number" required> <br>
+            <label>Arrival date <span style="margin-left:117px"> Departure date </span> <span style="margin-left:97px"> Nights</span></label><br>
+            <input type="date" name="arrival date" required>
+            <input type="date" name="departure date" required>
+            <input type="number" id="nightCount" min="1" max="365" name="nights" required> <br>
+            <label> Aproximate time of arrival:</label> <br>
+            <input type = "time" name="timeOfArrival"> <br>
+            <label>Adults  <span style="margin-left:148px">Children</span></label><br>
+            <input type="number" id="adultCount" min="1" max="10" name="adults" required>
+            <input type="number" id="childCount" min="0" max="10" name="children" required> <br>
+            <label> Gender </label><br>
+            <input type="radio" name="gender" value="1"> Male
+            <input type="radio" name="gender" value="2"> Female
+            <input type="radio" name="gender" value="3"> Other <br>
+            <label> Service </label> <br>
+            <input type="checkbox" id="check1" name="service" value="10"> Bed & breakfast 
+            <input type="checkbox" id="check2" name="service" value="11"> All day Pool access 
+            <input type="checkbox" id="check3" name="service" value="12"> Room service 
+            <input type="checkbox" id="check4" name="service" value="13"> Phone in food delivery
+            <input type="checkbox" id="check5" name="service" value="14"> Tour around town
+            <input type="checkbox" id="check6" name="service" value="15"> All day bar access   
+            <input type="checkbox" id="check7" name="service" value="16"> All day restaurant access
+            <ul>
+                <li>Default 150$</li>
+                <li>Every night + 50$</li>
+                <li>Every adult + 25$</li>
+                <li>Every child + 10$</li>
+                <li>Any additional service is + 50$</li>
+            </ul>
+            <p id="totalP"></p>
+            <button id="calculateTotal" type="button"> Evaluate total </button>
+            <hr>
+            <b> Credit card info </b> <br>
+            <label> Card Number</label> <br>
+            <input type="number" name="creditcard1" required> <br>
+            <label> Expiration date </label> <br>
+            <input type="month" name="creditcard2" required> <br>
+            <input type="radio" name="Terms" value="yes" required> I have read the terms and service, and I accept them <br>
+            <button type="submit"> Make your reservation!</button>
+        </form>
+        <div id="termsOfRes">
+        <label><b><u>Important!!!</u></b></label>
+        <p> You can only reserve a holiday if you fulfill these conditions and accept these terms! </p>
+        <ol>
+            <li>You are 18 years or older</li>
+            <li>You own a credit card</li>
+            <li>You take full responsibility for yourself and ypur other guests</li>
+            <li>You will treat the staff with respect </li>
+        </ol>
+        <a href="mailto:reservation@holidayresort.com"> If you have any questions, don't hesitate to contact us!</a>
+        </div>
     </section>
+    <!-- Javascript to calculate total-->
+    <script>
+        var button = document.getElementById("calculateTotal");
+
+        var nightCount = document.getElementById("nightCount");
+        var adultCount = document.getElementById("adultCount");
+        var childCount = document.getElementById("childCount");
+        var check1 = document.getElementById("check1");
+        var check2 = document.getElementById("check2");
+        var check3 = document.getElementById("check3");
+        var check4 = document.getElementById("check4");
+        var check5 = document.getElementById("check5");
+        var check6 = document.getElementById("check6");
+        var check7 = document.getElementById("check7");
+
+        var totalP = document.getElementById("totalP");
+
+        button.addEventListener("click", function(){
+        var total = parseInt(150);
+        // 50 per night
+        if(nightCount.value != ""){
+            var nightValue = parseInt(nightCount.value);
+            total = total + ((nightValue * 50));
+        }
+
+        // 25 per adult
+        if(adultCount.value != ""){
+            var adultValue = parseInt(adultCount.value);
+            total = total + (adultValue * 25);
+        }
+
+        // 10 per child
+        if(childCount.value != ""){
+            var childValue = parseInt(childCount.value);
+            total = total + (childValue * 10);
+        } 
+
+        // 50 per checkbox
+        if(check1.checked  == true){ total = total + 50; }
+        if(check2.checked  == true){ total = total + 50; }
+        if(check3.checked  == true){ total = total + 50; }
+        if(check4.checked  == true){ total = total + 50; }
+        if(check5.checked  == true){ total = total + 50; }
+        if(check6.checked  == true){ total = total + 50; }
+        if(check7.checked  == true){ total = total + 50; } 
+
+        // Display total
+        totalP.innerHTML = "Your total is: " + total +"$";
+        });
+    </script>
     <footer>
         <div style="margin-left: 15%" class="quickLinks">
             <p> Quick Links </p>

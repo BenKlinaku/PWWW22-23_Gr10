@@ -1,6 +1,98 @@
+
+/* Second section aka reserving */
 #Reserve {
-    width: 100%;
-    height: 500px;
     background-repeat: no-repeat;
-    background-position: right 35% bottom 45%;;
+    background-position: right 35% top 20%;;
+}
+
+#Reserve form {
+    font-size: 16px;
+    line-height: 36px;
+    color: black;
+    font-weight: 400;
+    font-family: "Khand",serif;
+}
+#Reserve > b, #Reserve form b {
+    margin-left: 10px;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color:black;
+    font-weight: 400;
+    font-family: "Khand",serif;
+}
+#Reserve form label {
+    font-size: 16px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color:coral;
+    font-weight: 400;
+    font-family: "Khand",serif;
+}
+#Reserve form label, #Reserve input {
+    margin-left: 10px;
+}
+#Reserve input[type=date], #Reserve input[type=text],
+#Reserve input[type=number], #Reserve input[type=email], 
+#Reserve input[type=tel], #Reserve input[type=time],
+#Reserve input[type=month] {
+    width: 176px;
+    height: 47px;
+    background-color: #ffffff;
+    font-size: 16px;
+    line-height: 36px;
+    color: grey;
+    font-weight: 400;
+    font-family: "Khand",serif;
+}
+#Reserve form p {
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color:black;
+    font-weight: 400;
+    font-family: "Khand",serif;
+}
+#Reserve button {
+    margin-top: 50px;
+    width: 100px;
+    height: 56px;
+    background-color: #ce242d;
+    font-size: 14px;
+    text-transform: uppercase;
+    color:black;
+    font-weight: 400;
+    font-family: "Khand",serif;
+}
+#Reserve form li {
+    color: #ce242d;
+    font-size: 15px;
+    font-family: "Advent Pro";
+}
+#termsOfRes {
+    background-image: linear-gradient(to right, white, black 5%, black 95%, white);
+    margin-top: 50px;
+    text-align: center;
+    color: #ce242d;
+}
+#termsOfRes label {
+    font-size: 50px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Advent Pro";
+}
+#termsOfRes p {
+    font-size: 20px;
+    font-family: "Advent Pro";
+}
+#termsOfRes li {
+    list-style-position:inside;
+    font-size: 15px;
+    font-family: "Advent Pro";
+}
+#termsOfRes a:visited, #termsOfRes a:link {
+    text-decoration:none;
+    color: #ce242d;
 }
