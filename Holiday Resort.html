@@ -31,28 +31,28 @@
     <p id="nextholiday">Next Holiday</p>
     <a href="#">View all room</a>
     <br><br>
-    <form method="get" action="http://www.randyconnolly.com/tests/process.php">
+    <form id="form1" method="get" action="Rooms and Reservations.html">
         <table cellspacing=“100px”>
             <tr>
                 <td>
                     <label>Arrival date</label><br>
-                    <input type="date" name="arrival date">
+                    <input id="arr" type="date" name="arrival date">
                 </td>
                 <td>
                     <label>Departure date</label><br>
-                    <input type="date" name="departure date">
+                    <input id="dep" type="date" name="departure date">
                 </td>
                 <td>
                     <label>Night</label><br>
-                    <input type="number" min="1" max="10" name="nights">
+                    <input id="nt" type="number" min="1" max="10" name="nights">
                 </td>
                 <td>
                     <label>Adults</label><br>
-                    <input type="number" min="2" max="10" name="adults">
+                    <input id="adu" type="number" min="2" max="10" name="adults">
                 </td>
                 <td>
                     <label>Children</label><br>
-                    <input type="number" min="0" max="10" name="children">
+                    <input id="chil" type="number" min="0" max="10" name="children">
                 </td>
                 <td>
                     <button type="submit">
@@ -62,6 +62,23 @@
             </tr>
         </table>
     </form>
+    <!-- Local storage-->
+    <script>
+        var arrival = document.getElementById("arr");
+        var departure = document.getElementById("dep");
+        var night = document.getElementById("nt");
+        var adult = document.getElementById("adu");
+        var child = document.getElementById("chil");
+        var form = document.getElementById("form1");
+
+        form.addEventListener("input",function(){
+            localStorage.setItem('arrival date',arrival.value);
+            localStorage.setItem('departure date',departure.value);
+            localStorage.setItem('nights',night.value);
+            localStorage.setItem('adults',adult.value);
+            localStorage.setItem('children',child.value);
+        })
+    </script>
 </section>
 <section id="second">
     <p><span>Welcome to our Website</span> <br>

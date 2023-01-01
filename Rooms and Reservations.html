@@ -29,14 +29,14 @@
     </section>
     <section id="Reserve">
         <b><u> Make your reservation! </u></b>
-        <form method="post" action="http://www.randyconnolly.com/tests/process.php" autocomplete="on">
+        <form id="f" method="post" action="http://www.randyconnolly.com/tests/process.php" autocomplete="on">
             <label> Name <span style="margin-left:160px">Surname</span> <span style="margin-left:135px">Age</span></label> <br>
-            <input type="text" name="name" placeholder="Your name.." required>
-            <input type="text" name="surname" placeholder="Your surname.." required>
-            <input type="number" name="age" placeholder="Age" min="18" max="100" required> <br>
+            <input id="na" type="text" name="name" placeholder="Your name.." required>
+            <input id="s" type="text" name="surname" placeholder="Your surname.." required>
+            <input id="a" type="number" name="age" placeholder="Age" min="18" max="100" required> <br>
             <label> E-mail <span style="margin-left:151px">Telephone number</span></label> <br>
-            <input type="email" name="email" placeholder="Your email.." required>
-            <input type="tel" name="Telephone" placeholder="Your telephone number" required> <br>
+            <input id="e" type="email" name="email" placeholder="Your email.." required>
+            <input id="t" type="tel" name="Telephone" placeholder="Your telephone number" required> <br>
             <label>Arrival date <span style="margin-left:117px"> Departure date </span> <span style="margin-left:97px"> Nights</span></label><br>
             <input type="date" name="arrival date" required>
             <input type="date" name="departure date" required>
@@ -85,7 +85,7 @@
             <li>You take full responsibility for yourself and ypur other guests</li>
             <li>You will treat the staff with respect </li>
         </ol>
-        <a href="mailto:reservation@holidayresort.com"> If you have any questions, don't hesitate to contact us!</a>
+        <a href="mailto:reservation@holidayresort.com"> If you have any questions, don't hesitate to contact us! (By clicking here)</a>
         </div>
     </section>
     <!-- Javascript to calculate total-->
@@ -137,6 +137,23 @@
         // Display total
         totalP.innerHTML = "Your total is: " + total +"$";
         });
+    </script>
+    <!-- Session storage-->
+    <script>
+        var na = document.getElementById("na");
+        var surname = document.getElementById("s");
+        var age = document.getElementById("a");
+        var telephone = document.getElementById("t");
+        var email = document.getElementById("e");
+        var form = document.getElementById("f");
+
+        form.addEventListener("input",function(){
+            sessionStorage.setItem('name', na.value);
+            sessionStorage.setItem('surname',surname.value);
+            sessionStorage.setItem('age',age.value);
+            sessionStorage.setItem('telephone',telephone.value);
+            sessionStorage.setItem('email',email.value);    
+        }); 
     </script>
     <footer>
         <div style="margin-left: 15%" class="quickLinks">
