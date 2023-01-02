@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="appcaches/Restaurant.appcache">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -186,6 +186,93 @@
             <img id="food2" src="assets/Restaurant/PizzaAndPasta.jpg" alt="Italian Food">
             <img id="food3" src="assets/Restaurant/Sushi.jpg" alt="Sushi">
         </div>
+        <p id="apply"> Want to apply as a chef and serve food to thousands of guests from across the globe? Or know anyone that would?
+            Apply using the email link below! In the meantime take a look at our rates:
+        </p>
+        <select id="position" name="Position">
+            <option value="0"> Choose Position</option>
+            <option value="1"> Pastry chef</option>
+            <option value="2"> Sauce chef</option>
+            <option value="3"> Fish chef</option>
+            <option value="4"> Meat chef</option>
+            <option value="5"> grill chef</option>
+            <option value="6"> Fry chef</option>
+            <option value="7"> Butcher chef</option>
+        </select>
+        <select id="level" name="Level">
+            <option value="0"> Choose Level</option>
+            <option value="1"> Head/Executive</option>
+            <option value="2"> Sous </option>
+            <option value="3"> Senior </option>
+            <option value="4"> Beginner </option>
+            <option value="5"> Intermediate </option>
+            <option value="6"> Expert </option>
+        </select>
+        <p id="pay"> Pay: </p>
+        <script>
+            var position = document.getElementById("position");
+            var level = document.getElementById("level");
+            var pay = document.getElementById("pay");
+
+            var payment = 0;
+            var temp = 0;
+
+            function calculatePay(){
+                switch(position.selectedIndex){
+                    case 0:
+                        payment = 0;
+                        break;
+                    case 1:
+                        payment = 1500;
+                        break;
+                    case 2:
+                        payment = 1550;
+                        break;
+                    case 3:
+                        payment = 1700;
+                        break;
+                    case 4:
+                        payment = 1630;
+                        break;
+                    case 5:
+                        payment = 1800;
+                        break;
+                    case 6:
+                        payment = 1900;
+                        break;
+                    case 7:
+                        payment = 1500;
+                        break;
+                }    
+                switch(level.selectedIndex){
+                    case 0:
+                        temp = payment;
+                        break;
+                    case 1:
+                        temp = payment * 1.5;
+                        break;
+                    case 2:
+                        temp = payment * 1.3;
+                        break;
+                    case 3:
+                        temp = payment * 1.2;
+                        break;
+                    case 4:
+                        temp = payment * 0.6;
+                        break;
+                    case 5:
+                        temp = payment * 0.8;
+                        break;
+                    case 6:
+                        temp = payment
+                        break;
+                }  
+                pay.innerHTML = "Pay: " + temp + "$ (per month)";
+            }
+            position.addEventListener("input",calculatePay,);
+            level.addEventListener("input",calculatePay,);
+        </script>
+        <img id="drag" src="assets/Restaurant/Restaurant.jpg">
         <a style="margin-bottom: 50px" href="Rooms and Reservations.html#Reserve"> Reserve now! </a>
         <a href="mailto:reservation@holidayresort.com"> Got any recommendation? Got any Complaints? Click here to email us!</a>
     </section>
