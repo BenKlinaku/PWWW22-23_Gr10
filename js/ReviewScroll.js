@@ -23,7 +23,7 @@ circle1.addEventListener("click",function(){
 });
 
 circle2.addEventListener("click",function(){
-    r.innerHTML = "\"The time I spent here was among the best of my life. For both me and my family, they all loved it!" +
+    r.innerHTML = "\"The time I spent here was among the best of my life. For both me and my family, they all loved it! " +
     "Especially my kids, which are very hard to please. 10/10\n";
     l.innerHTML = "Jonathan Crane, United States of America";
 

@@ -1,9 +1,9 @@
 #dinnerPlate {
-
     text-align: center;
 }
 svg {
     background-color: orangered;
+    box-shadow: 2px 2px 5px black;
     margin-left: 200px;
     
 }
@@ -193,9 +193,4 @@ select {
     color: grey;
     font-weight: 400;
     font-family: "Khand",serif;
-}
-
-#drag {
-    width: 400px;
-    height: 300px;
 }

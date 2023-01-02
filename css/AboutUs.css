@@ -9,6 +9,7 @@
     color: #212121;
     font-weight: 400;
     font-family: "Khand";
+    text-shadow: 2px 2px black;
 }
 #mainBody p,#mainBody li {
     font-size: 15px;
