@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 *{
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: sans-serif;
+  margin: 5;
+  padding: 5;
   scroll-behavior: smooth;
-  scroll-padding-top: 2rem;
+  scroll-padding-top: 3rem;
   box-sizing: border-box;
 
 }
@@ -24,19 +24,38 @@ li{
 }
 
 section{
-  padding: 3rem 0 2rem;
+  padding: 2rem 0 3rem;
+}
+
+.post-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.6rem;
+  margin-top: 2rem !important;
+}
+.filter-item {
+  font-size: 0.7rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.active-filter {
+  background: var(--second-color);
+  color: var(--bg-color);
+  padding: 4px 10px;
+  border-radius: 4px;
 }
 .post-filter {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 1.5rem;
+  column-gap: 1.6rem;
   margin-top: 2rem !important;
 }
-
 .filter-item {
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 0.7rem;
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -69,8 +88,8 @@ section{
 }
 
 .category {
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 0.6rem;
+  font-weight: 450;
   text-transform: uppercase;
 }
 
@@ -106,19 +125,193 @@ section{
   gap: 10px;
 }
 .profile-img {
-  width: 35px;
-  height: 35px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center;
+  object-position: center,right;
   border: 2px solid var(--second-color);
 }
-
-.post-filter container{
+h1{
+  font-weight: normal;
+  font-size: 35px;
+  position: relative;
+  margin: 40px 0;
+  text-align: center;
 }
 
+h1::before{
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background-color: crimson;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: animate 4s linear infinite; 
+}
 
+h2{
+  font-weight: normal;
+  font-size: 35px;
+  position: relative;
+  margin: 40px 0;
+  text-align: center;
+}
 
+h2::before{
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background-color: rgb(214, 121, 14);
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: animate 4s linear infinite;
+}
 
+@keyframes animate {
+  0% {
+      width: 100px;
+  }
+  50% {
+      width: 200px;
+  }
+  100%{
+      width: 100px;
+  }
+}
+*
+{
+    box-sizing: border-box;
+}
 
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+/* Header for side pages */
+header {
+    text-align: center;
+    background-color: darkred;
+}
+header nav a
+{
+    margin-left: 16px;
+    font-size: 22px;
+    line-height: 42px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Advent Pro',serif;
+    transition: all 0.2s;
+    user-select: none;
+}
 
+header nav a:link, header nav a:visited
+{
+    color: black;
+    text-decoration: none;
+}
+
+header nav a:hover
+{
+    color: #ba0000;
+}
+/* Footer for side pages */
+/* Backround */
+footer {
+    height: 507px;
+    background-color: #000000;    
+}
+/* Links and contact information at the top */
+/* Removing underline in links and making universal list item changes */
+footer a:link, footer a:visited {
+    text-decoration: none;
+}
+footer div a:link, footer div a:visited {
+    color: #999999;
+}
+footer li {
+    margin-top: 10px;
+    list-style-image:url('../assets/Main/SmallArrow.png');
+    font-size: 17px;
+    line-height: 14px;
+    font-weight: 400;
+    font-family: "Khand";
+}
+/* Leftmost and middle link sections */
+.quickLinks {
+    float: left;
+}
+.quickLinks p {
+    font-size: 26px;
+    line-height: 78px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Advent Pro"; 
+    margin-bottom: 0;
+}
+.quickLinks ul {
+    position: relative;
+    left: -30px;
+    float: left;
+    margin-top: 0;
+}
+/* Rightmost section */
+#contactInfoDiv div {
+    position: relative;
+    left: 11%;
+    top: 25px;
+    font-size: 26px;
+    line-height: 78px;
+    text-transform: uppercase;
+    color: #ce242d;
+    font-weight: 700;
+    font-family: "Advent Pro";
+}
+#contactInfoDiv p {
+    position: relative;
+    left: 11%;
+    top: 8px;
+    font-size: 19px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Khand";
+}
+#contactInfoDiv span {
+    margin-left: 50px;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: none;
+    font-weight: 400;  
+}
+/* Bottom part */
+#bottomInfo {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 15%;
+
+}
+#bottomInfo p {
+
+    font-size: 17px;
+    line-height: 31px;
+    color: #999999;
+    font-weight: 400;
+    font-family: "Khand";
+}
+/* Social media icons */
+footer img {
+    margin-left: 16px;
+    margin-top: 25px;
+    width: 13px;
+    height: 13px;
+    user-select: none;
+}
