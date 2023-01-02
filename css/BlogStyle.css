@@ -23,6 +23,10 @@ li{
   width: 100%;
 }
 
+h1{
+  font-family: 'Advent Pro',serif;
+}
+
 section{
   padding: 2rem 0 3rem;
 }
