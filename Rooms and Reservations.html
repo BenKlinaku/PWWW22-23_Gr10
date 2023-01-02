@@ -11,6 +11,55 @@
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Khand" rel="stylesheet">
+    <!--Geolocation button-->
+    <script type="text/javascript">
+        window.addEventListener("load",function(){
+            var mapbutton = document.getElementById("mapbutton");
+            mapbutton.addEventListener("click",function(){
+                if ('geolocation' in navigator){
+                navigator.geolocation.getCurrentPosition(function(position){
+                    let latitude = position.coords.latitude;
+                    let longitude = position.coords.longitude;
+                    console.log(position.coords.latitude,longitude);
+                    var link = document.getElementById("mapAnch");
+                    let googleMap = "https://maps.google.com/?q=" +latitude +"," +longitude;
+                    link.href = googleMap;
+                    link.style.display = "block";
+
+                },function(error){
+                    window.alert(error);
+                })
+            }
+            else {
+                window.alert("Feature not supported in your web browser")
+            }
+            });
+        });
+    </script>
+    <!-- Form validation -->
+    <script>
+        function validate(){
+            let Name = document.forms["Myform"]["name"].value;
+            let Surname = document.forms["Myform"]["surname"].value;
+            let Age = document.forms["Myform"]["age"].value;
+            let Email = document.forms["Myform"]["email"].value;
+            let Telephone = document.forms["Myform"]["Telephone"].value;
+            let ArrivalDate = document.forms["Myform"]["arrival date"].value;
+            let DepartureDate = document.forms["Myform"]["departure date"].value;
+            let Nights = document.forms["Myform"]["nights"].value;
+            let Adults = document.forms["Myform"]["adults"].value;
+            let Children = document.forms["Myform"]["children"].value;
+            let creditcard1 = document.forms["Myform"]["creditcard1"].value;
+            let creditcard2 = document.forms["Myform"]["creditcard2"].value;
+            if (Name == "" || Surname == "" || Age == "" || Email == "" || Telephone == ""
+            || ArrivalDate == "" || DepartureDate == "" || Nights == "" || Adults == "" || Children == "" 
+            || creditcard1 == "" || creditcard2 == ""){
+                window.alert("Please fill out the form!")
+                return false;
+            }
+        }
+    </script>
+   
 </head>
 <body>
     <header>
@@ -27,25 +76,30 @@
     <section>
         
     </section>
+    <div id="Map">
+       <button id="mapbutton" type="button">  Find our hotels near you! </button>
+       <a href="" target="_blank" id="mapAnch">Click here to see!</a>
+    </div>
+    <hr>
     <section id="Reserve">
         <b><u> Make your reservation! </u></b>
-        <form id="f" method="post" action="http://www.randyconnolly.com/tests/process.php" autocomplete="on">
+        <form name="Myform" id="f" method="post" action="http://www.randyconnolly.com/tests/process.php" onsubmit="return validate()" autocomplete="on">
             <label> Name <span style="margin-left:160px">Surname</span> <span style="margin-left:135px">Age</span></label> <br>
-            <input id="na" type="text" name="name" placeholder="Your name.." required>
-            <input id="s" type="text" name="surname" placeholder="Your surname.." required>
-            <input id="a" type="number" name="age" placeholder="Age" min="18" max="100" required> <br>
+            <input id="na" type="text" name="name" placeholder="Your name.." >
+            <input id="s" type="text" name="surname" placeholder="Your surname.." >
+            <input id="a" type="number" name="age" placeholder="Age" min="18" max="100" > <br>
             <label> E-mail <span style="margin-left:151px">Telephone number</span></label> <br>
-            <input id="e" type="email" name="email" placeholder="Your email.." required>
-            <input id="t" type="tel" name="Telephone" placeholder="Your telephone number" required> <br>
+            <input id="e" type="email" name="email" placeholder="Your email.." >
+            <input id="t" type="tel" name="Telephone" placeholder="Your telephone number" > <br>
             <label>Arrival date <span style="margin-left:117px"> Departure date </span> <span style="margin-left:97px"> Nights</span></label><br>
-            <input type="date" name="arrival date" required>
-            <input type="date" name="departure date" required>
-            <input type="number" id="nightCount" min="1" max="365" name="nights" required> <br>
+            <input type="date" name="arrival date" >
+            <input type="date" name="departure date" >
+            <input type="number" id="nightCount" min="1" max="365" name="nights" > <br>
             <label> Aproximate time of arrival:</label> <br>
             <input type = "time" name="timeOfArrival"> <br>
             <label>Adults  <span style="margin-left:148px">Children</span></label><br>
-            <input type="number" id="adultCount" min="1" max="10" name="adults" required>
-            <input type="number" id="childCount" min="0" max="10" name="children" required> <br>
+            <input type="number" id="adultCount" min="1" max="10" name="adults" >
+            <input type="number" id="childCount" min="0" max="10" name="children" > <br>
             <label> Gender </label><br>
             <input type="radio" name="gender" value="1"> Male
             <input type="radio" name="gender" value="2"> Female
@@ -70,10 +124,10 @@
             <hr>
             <b> Credit card info </b> <br>
             <label> Card Number</label> <br>
-            <input type="number" name="creditcard1" required> <br>
+            <input type="number" name="creditcard1"> <br>
             <label> Expiration date </label> <br>
-            <input type="month" name="creditcard2" required> <br>
-            <input type="radio" name="Terms" value="yes" required> I have read the terms and service, and I accept them <br>
+            <input type="month" name="creditcard2"> <br>
+            <input type="radio" name="Terms" value="yes" > I have read the terms and service, and I accept them <br>
             <button type="submit"> Make your reservation!</button>
         </form>
         <div id="termsOfRes">

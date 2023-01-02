@@ -11,7 +11,9 @@ var l = document.querySelector("#locationG");
 
 // Making actions when they get clicked
 circle1.addEventListener("click",function(){
-    r.innerHTML = "Lorem ip sint totam, blanditiis ea.";
+    r.innerHTML = "\"I had a great time with my holiday," +
+    "the staff polite, the food delicious, the rooms perfect!" +
+    "Can't recommend it enough!\"";
     l.innerHTML = "Lesley Greenman, Australia";
 
     circle4.src = "assets/Main/Circle2.png";
@@ -21,9 +23,8 @@ circle1.addEventListener("click",function(){
 });
 
 circle2.addEventListener("click",function(){
-    r.innerHTML = "\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia" +
-    "placeat, quam,r, ex aut " +
-    "sint esse totam amet distinctio? Mollitia perspiciatis sequi nihil sint totam, blanditiis ea.\"";
+    r.innerHTML = "\"The time I spent here was among the best of my life. For both me and my family, they all loved it!" +
+    "Especially my kids, which are very hard to please. 10/10\n";
     l.innerHTML = "Jonathan Crane, United States of America";
 
     circle1.src = "assets/Main/Circle2.png";
@@ -33,9 +34,9 @@ circle2.addEventListener("click",function(){
 });
 
 circle3.addEventListener("click",function(){
-    r.innerHTML = "\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia" +
-    "placeat, quam,r, jdosiajfoijafoiasjfoiasjex aut " +
-    "sint esse totaia perspiciatis sequi nihil sint totam, blanditiis ea.\"";
+    r.innerHTML = "\"I wanted to spend a great vacation with most of my family members. " +
+    "And boy did this place deliver! I've had many dissapointing holidays. " +
+    "This was a breath of fresh air for me and everyone else involved!\"";
     l.innerHTML = "Yua Sara, Japan ";
 
     circle1.src = "assets/Main/Circle2.png";
@@ -45,9 +46,9 @@ circle3.addEventListener("click",function(){
 });
 
 circle4.addEventListener("click",function(){
-    r.innerHTML = "\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia" +
-    "placeat, quam,r, jdosiajfoijafoiasjfoiasjex aut " +
-    "sint esse totaia perspiciatis sequi nihil sint totam, blanditiis ea.\"";
+    r.innerHTML = "\"My husband and I decided spent our tenth year anniversary here. " +
+    "The experience was practically perfect! " +
+    "It will be a memory we will cherish for the rest of our lives.\"";
     l.innerHTML = "Lesley Sanders, Germany ";
 
     circle1.src = "assets/Main/Circle2.png";
