@@ -1,0 +1,18 @@
+#mainBody {
+    margin-top: 50px;
+}
+#mainBody span {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #212121;
+    font-weight: 400;
+    font-family: "Khand";
+}
+#mainBody p,#mainBody li {
+    font-size: 15px;
+    color: #212121;
+    font-weight: 400;
+    font-family: sans-serif;
+}
