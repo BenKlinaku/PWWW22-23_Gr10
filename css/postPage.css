@@ -1,0 +1,27 @@
+#mainContent {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#mainContent h3{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #212121;
+    font-weight: 400;
+    font-family: "Khand";
+    text-shadow: 2px 2px black;
+}
+#mainContent img {
+    display: block;
+    align-items: center;
+    margin: auto;
+    width: 500px;
+    height: 300px;
+}
+#mainContent p {
+    font-size: 15px;
+    color: #212121;
+    font-weight: 400;
+    font-family: sans-serif;
+}

@@ -35,13 +35,13 @@ function checkChecks(k){
             break;
         case 3:
             photos1Change(2);
-            photos2Change(1);
-            photos3Change(2);
+            photos2Change(2);
+            photos3Change(1);
             break;
         case 4:
             photos1Change(2);
-            photos2Change(2);
-            photos3Change(1);
+            photos2Change(1);
+            photos3Change(2);
             break;
     }
 }
