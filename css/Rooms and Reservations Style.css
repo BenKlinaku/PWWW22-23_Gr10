@@ -1,4 +1,108 @@
 
+#dhomat{
+    padding: 40px 0px;
+    background: linear-gradient(rgb(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("../assets/BlogPhotos/img2.jpg") center/cover no-repeat fixed;
+    font-family: "Advent pro";
+    
+}
+.dhoma{
+    margin: 46px 0;
+    padding-bottom: 25px;
+    background-color: black;
+    color: #fff;
+
+}
+.dhomat a {
+    font-size: 20px;
+    color:rgb(212, 183, 16);
+}
+.dhomat a:link,.dhomat a:after {
+    text-decoration: none;
+}
+.tex-dhomes{
+    padding: 5px 20px;
+}
+
+.tex-dhomes h3{
+    font-size: 24px;
+}
+
+.tex-dhomes ul{
+    list-style-type: none;
+    margin: 15px 0;
+}
+
+.tex-dhomes ul li{
+    padding: 7px 0;
+}
+
+.tex-dhomes ul li i{
+    color: rgb(212, 183, 16);
+}
+
+.vlersimi {
+    opacity: 0.7;
+}
+
+.vlersimi span {
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(212, 183, 16);
+}
+
+.fotoja-dhomes{
+    overflow: hidden;
+}
+
+.fotoja-dhomes img{
+    transition: var(--transition);
+}
+
+.fotoja-dhomes:hover img{
+    transform: scale(1.1);
+}
+
+@media(min-width: 900px){
+    .permb-dhomave{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .dhoma{
+        flex: 0 0 calc(50% - 20%);
+        margin: 10px;
+    }
+}
+
+@media(min-width: 1370px){
+    .permb-dhomave{
+      flex-direction:column ;
+    }
+    .dhoma{
+        display: flex;
+        padding-bottom: 0;
+        margin: 5px 0;
+    }
+
+    .fotoja-dhomes{
+        flex: 1;
+    }
+
+    .fotoja-dhomes img {
+        height: 100%;
+    }
+    .tex-dhomes{
+        flex: 1;
+    } 
+    .dhoma:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+
+}
+
+
+
 
 /* Geolocation */
 #Map button {
