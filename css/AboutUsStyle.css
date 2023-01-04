@@ -1,5 +1,6 @@
 #mainBody {
     margin-top: 50px;
+    font-family: "Advent pro",sans-serif;
 }
 #mainBody span {
     display: block;
@@ -15,5 +16,4 @@
     font-size: 15px;
     color: #212121;
     font-weight: 400;
-    font-family: sans-serif;
 }
